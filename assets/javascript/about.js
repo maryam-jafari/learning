@@ -20,10 +20,12 @@ var menu = ['swiper.webp', 'girl-1797769.webp', 'girl-1797769.webp','swiper.webp
 var mySwiper = new Swiper ('.about', {
     // If we need pagination
     loop:true,
+
     pagination: {
 
         el: '.swiper-pagination',
         clickable: true,
+
         renderBullet: function (index, className) {
 
             return '<img class="slide-content ' + className + '"  src="./assets/images/'+menu[index]+'">'
@@ -48,13 +50,21 @@ document.querySelectorAll(".swiper-pagination-bullet").forEach(function (val){
         }
 
         val.previousElementSibling.style.display="inline-block";
-        val.nextElementSibling.style.marginLeft="-70px";
-        val.previousElementSibling.style.marginRight="-70";
+        // val.nextElementSibling.style.margin="-24px !important";
+        // val.previousElementSibling.style.margin="-24 !important";
 
     })
 })
 
 document.querySelector(".swiper-pagination-bullet-active").nextElementSibling.style.display="inline-block";
 // document.querySelector(".swiper-pagination-bullet-active").previousElementSibling.style.display="inline-block";
-document.querySelector(".swiper-pagination-bullet-active").nextElementSibling.style.marginLeft="-70px";
+// document.querySelector(".swiper-pagination-bullet-active").nextElementSibling.style.margin="-24px !important";
 // document.querySelector(".swiper-pagination-bullet-active").previousElementSibling.style.marginRight="-70";
+document.querySelector(".swiper-button-prev").addEventListener("click",function (){
+
+    document.querySelector(".swiper-pagination-bullet-active").click();
+})
+document.querySelector(".swiper-button-next").addEventListener("click",function (){
+
+    document.querySelector(".swiper-pagination-bullet-active").click();
+})

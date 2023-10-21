@@ -2148,6 +2148,7 @@ span {
     display: block;
     align-items: center;
     transition: 0.5s;
+    bottom: 8px;
 }
 .quick-direction .fa-angle-down{
     transform: rotate(180deg);
@@ -2319,7 +2320,7 @@ span {
 }
 
 .blue-box .swiper {
-    width: 95vw;
+    width: min(1546px,95%);
     padding-bottom: 40px;
 }
 
@@ -3544,9 +3545,9 @@ span {
     padding-right: 10px;
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 95%;
     height: auto;
-    margin-top: 10%;
+    margin-top: 30px;
     max-width: 600px;
 
 }
@@ -3667,14 +3668,14 @@ span {
     position: relative;
 }
 .main-wrapper-boxes .list-boxes {
-    width: 100%;
+    width: min(1170px,95%);
     display: flex;
     transition: opacity .5s ease;
     overflow: hidden;
     position: relative;
-    max-width: 1536px;
-    padding-left: 183px;
-    padding-right: 183px;
+    margin: auto;
+    padding-bottom: 100px;
+
 }
 /* /////////////////// */
 
@@ -3692,7 +3693,7 @@ span {
 .developer{
     background: url("../images/about.jpg");
     background-attachment:fixed;
-    background-size: 150vw;
+    background-size: cover;
     height: 900px;
     background-repeat: no-repeat;
     position: relative;
@@ -3793,19 +3794,43 @@ span {
 .about-contant .talk-btn:hover{
     background-color: rgba(96,211,198,0.8);
 }
+.about-contant .swiper-pagination{
+    margin-top: 100px;
+    height: fit-content;
+}
+.about-contant .swiper-wrapper{
+    padding-top: 100px;
+}
+.about-contant .swiper-button-next,.about-contant .swiper-button-prev{
+    color: var(--main-color);
+    opacity: 0.7;
+}
 .about-contant .swiper-pagination .swiper-pagination-bullet{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     display: none;
     position: relative;
     z-index: 10;
     border: 2px solid var(--main-color);
     transition: 0.8s;
-    margin: -24px;
+    margin: -24px !important;
 }
 .about-contant .swiper-pagination .swiper-pagination-bullet-active{
     display: inline-block !important;
     z-index: 11;
+    margin: -24px !important;
+    transform: scale(1.15);
+}
+.about-contant .data-page .all-courses-btn{
+    background-color: var(--main-color);
+    color: var(--main-p-color);
+    font-weight: 300;
+    font-size: 16px;
+}
+.about-contant .data-page .all-courses-btn .about-span{
+    color: var(--color-item-third);
+    padding-left: 5px;
+
 }
 @media screen and (min-width:2200px){
     .categoriespart{
@@ -3916,6 +3941,24 @@ span {
     .related-courses{
         width: 100%;
     }
+/*    about page*/
+    .main-wrapper-boxes .main-title-boxes #tittle-box{
+        font-size: 35px;
+    }
+    .main-wrapper-boxes .list-boxes{
+        gap: 40px 15px;
+    }
+    .wrapper-boxes .box .content .text-content h3{
+        font-size: 35px;
+    }
+    .about-contant .swiper-slide .title{
+        font-size: 35px;
+    }
+    .about-contant .swiper-button-next,.about-contant .swiper-button-prev{
+        display: none;
+    }
+
+
 }
 @media screen and (max-width:768px){
     .footer-container{
@@ -3998,6 +4041,48 @@ span {
     .info-video{
         width: 100%;
     }
+/*    about*/
+    .wrapper-boxes .box{
+        flex-direction: column;
+    }
+    .wrapper-boxes .box:nth-child(even){
+        flex-direction: column;
+    }
+    .wrapper-boxes .box .image,.wrapper-boxes .box .content{
+        width: 100%;
+    }
+    .wrapper-boxes .box .content-main-text{
+        margin-bottom: 30px;
+    }
+    .wrapper-boxes .box .content .text-content{
+        margin-top: 20px;
+    }
+    .wrapper-boxes .box .image .number{
+        font-size: 65px;
+    }
+    .main-wrapper-boxes .list-boxes .wrapper-box .card-box{
+        flex-direction: column;
+    }
+    .main-wrapper-boxes .list-boxes .wrapper-box .card-box .text-card{
+        width: 100%;
+    }
+    .main-wrapper-boxes .list-boxes {
+        gap: 40px 10px;
+    }
+    .main-wrapper-boxes .list-boxes .wrapper-box .card-box .text-card{
+        padding: 0 10px 0 0;
+    }
+    .main-wrapper-boxes .list-boxes .wrapper-box .card-box h3{
+        font-size: 16px;
+    }
+    .main-wrapper-boxes .list-boxes .wrapper-box .card-box .text-card p{
+        font-weight: 300;
+        font-size: 14px;
+    }
+    .back-image{
+        background-attachment: unset;
+    }
+
 }
 @media screen and (max-width:425px){
     .buy-button{
@@ -4297,6 +4382,49 @@ span {
     }
     .rating-box .right-box .statistics{
         margin-top: 10px;
+    }
+/*    about*/
+    .main-wrapper-boxes .main-title-boxes #tittle-box{
+        font-size: 25px;
+    }
+    .main-wrapper-boxes .main-title-boxes #paragragh-box{
+        width: 90%;
+        margin: auto;
+    }
+    .main-wrapper-boxes .list-boxes{
+        flex-direction: column;
+    }
+    .main-wrapper-boxes .list-boxes .wrapper-box{
+        width: 100%;
+    }
+    .main-wrapper-boxes .list-boxes .wrapper-box .card-box{
+        align-items: center;
+    }
+    .main-wrapper-boxes .list-boxes .wrapper-box .card-box .text-card{
+        text-align: center;
+    }
+    .about-contant .swiper-slide .description{
+        width: 100%;
+        font-size: 16px;
+    }
+    .about-contant .swiper-slide .title{
+        font-size: 29px;
+    }
+    .about-contant .call-box{
+        flex-direction: column;
+    }
+    .overDeveloper{
+        height: -webkit-fill-available;
+    }
+    .developer{
+        height: auto;
+    }
+    .about-contant .parent-btn{
+        padding-bottom: 50px;
+        padding-right: unset;
+    }
+    .about-contant .call-box div{
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width:375px){

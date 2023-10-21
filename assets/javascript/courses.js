@@ -9,7 +9,7 @@ var swiper = new Swiper(".courses", {
         },
         768:{
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 50,
             freeMode: true
         },1024:{
             slidesPerView: 3,
