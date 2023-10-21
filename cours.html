@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Poppins:wght@300&family=Rubik:ital@1&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body class="light-color">
+
+
+<header class="header wrapper">
+
+    <nav>
+
+
+
+        <div class="berger_menu">
+
+            <i class="fa-solid fa-bars"></i>
+            <div class="m-menu__overlay" ></div>
+
+            <div class="m-menu">
+                <div class="m-menu__header">
+                    <span>Close</span>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <form class="search-menu" role="search-menu">
+                    <input type="searchbar-menu" class="serachbox-menu" name="q"
+                           placeholder="What do you looking for ?" aria-label="Search through site content" />
+                    <button class="searchbar-menu-button ">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="buy">
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </form>
+                <ul class="ul-menu">
+
+                    <li class="sub">
+                        <a href="">Demos</a>
+                        <i class="fa-solid fa-bars"></i>
+                    </li>
+                    <ul class="sunset demos-subset">
+                        <li><a href="">Demo Edu Institute</a></li>
+                        <li><a href="">Demo Coursify</a></li>
+                        <li><a href="">Demo eLearning II</a></li>
+                        <li><a href="">Demo Single Instructor</a></li>
+                        <li><a href="">Demo Test Prep</a></li>
+                        <li><a href="">Demo Corporate Learning</a></li>
+                        <li><a href="">Demo Courses TechCamps</a></li>
+                        <li><a href="">Demo Kit Builder</a></li>
+                        <li><a href="">Demo RTL</a></li>
+                    </ul>
+
+                    <li><a href="">About</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li class="sub"><a href="">Pages</a>
+                        <i class="fa-solid fa-bars"></i>
+                    </li>
+                    <ul class="sunset pages-subset dno">
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Membership</a></li>
+                        <li><a href="">Landing Page</a></li>
+                        <li><a href="">Forums</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Account</a></li>
+                        <li><a href="">Portfolio</a></li>
+                    </ul>
+                    <li><a href="">Contact</a></li>
+
+
+                </ul>
+                <div class="footer-menu">
+                        <span>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="" style="border-bottom: transparent;"> +(0123) 456 789</a>
+                        </span>
+                    <span>
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="" style="border-bottom: transparent;">
+                                info@thimpress.com
+                            </a>
+                        </span>
+
+                </div>
+                <div class=" footer-menu-logo ">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="assets/images/logo-kit.webp" alt="logo">
+        </div>
+
+        <ul class="menubar">
+            <li class="Sec Demos">
+                <a class="angle" href="#"> Demos</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="secmenubar Demosbar secmenubargrowupanimation">
+                    <li href=""><a href="">Demo learning engin</a></li>
+                    <li href=""><a href="">Demo learning engin</a></li>
+
+                    <li href=""><a href="">Demo learning engin</a></li>
+
+                    <li href=""><a href="" style="border-bottom: transparent !important;">Demo learning engin</a></li>
+
+                </ul>
+            </li>
+            <li class="Sec About">
+                <a href="#"> About</a>
+            </li>
+            <li class="Sec Courses">
+                <a class="angle" href="#"> Courses</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="secmenubar Coursesbar secmenubargrowupanimation">
+                    <ul class="Coursesbarmenu ">
+
+                        <h3 class="titleCoursesbarmenu">ABOUT COURSES</h3>
+                        <li href=""><a href="">Courses</a></li>
+                        <li href=""><a href="">Free Access Courses</a></li>
+                        <li href=""><a href="">Paid Courses</a></li>
+                        <li href=""><a href="" >Our Teachers</a></li>
+                        <li href=""><a href="" >Become an Instructor</a></li>
+                        <li href=""><a href="" >Collections</a></li>
+                        <li href=""><a href="" >Instructor Profile</a></li>
+                    </ul>
+
+                    <div class="images mantion-course">
+                        <div class="image-mantion-course">
+                            <img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <a href="">LearnPress Master Web Design in Photoshop</a>
+                            <h3>FREE</h3>
+                        </div>
+                    </div>
+                    <img width="226" height="auto" class="images" src="assets/images/menu-image_360.webp" alt="">
+                </ul>
+            </li>
+            <li class="Sec Pages">
+                <a class="angle" href="#"> Pages</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="secmenubar Pagesbar secmenubargrowupanimation">
+                    <li href=""><a href="">Demo learning engin</a></li>
+                    <li href=""><a href="">Demo learning engin</a></li>
+
+                    <li href=""><a href="">Demo learning engin</a></li>
+
+                    <li href=""><a href="" style="border-bottom: transparent !important;">Demo learning engin</a></li>
+                </ul>
+            </li>
+            <li class="Sec Contact">
+                <a href="#"> Contact</a>
+            </li>
+        </ul>
+        <div class="login-buy-button">
+            <div class="login-part">
+                <i class="fa-solid fa-user" style="color: #000000;"></i>
+                <a href="#">Login</a>
+            </div>
+            <div class=" buy-button ">
+                <button class="gradient-button gradient-button-3"
+                        style="outline: transparent; border: transparent;">Buy Cours</button><br />
+            </div>
+        </div>
+    </nav>
+
+
+</header>
+
+<div class=" contant-cours">
+    <div class="back-image">
+        <div class="data-page-cours">
+            <p class="title">Affiliate Marketing – A Beginner’s Guide</p>
+            <p class="description">LearnPress is the best WordPress Learning Management System and it comes with many great features. This is the best WPLMS theme available in the market.</p>
+        </div>
+
+    </div>
+    <div class="box-parent">
+        <div class="all-texts-box">
+            <div class="img-box">
+                <img class="img-cours" src="assets/images/layer-9-min.jpg">
+                <div class="footer-img">
+                    <div class="data-box"><span>21</span>JUL</div>
+                    <div class="play-box">
+                        <div class="icon-box"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-video">
+                <div class="teacher">
+                    <img src="assets/images/21232f297a57a5a743894a0e4a801fc3.webp">
+                    <div class="text">
+                        <span class="title">Teacher</span>
+                        <span class="name">THIMPRESS</span>
+                    </div>
+                </div>
+                <div class="categori">
+                    <div class="text">
+                        <span class="title">Categories</span>
+                        <span class="name">BUSINESS, DESIGN</span>
+                    </div>
+                </div>
+                <div class="student">
+                    <div class="text">
+                        <span class="title">Students</span>
+                        <span class="name">123 (REGISTERED)</span>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="text">
+                        <span class="title">Review</span>
+                        <div class="star-box">
+                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description-box">
+                <span>Course Description</span>
+                <p>If you are a newbie to managing a WordPress website, then congratulations! You are here at the right track with us because we are going to introduce you one of the most basic knowledge when owning a WordPress page: how to find your site the best WordPress Hosting service. This process is often overlooked by most of the website owners. But it can be considered the most important key point to bring your site to stand out of the crowd. A great hosting service could help you to improve SEO and increase sales as well.</p>
+                <span>Certification</span>
+                <p>If you are a newbie to managing a WordPress website, then congratulations! You are here at the right track with us because we are going to introduce you one of the most basic knowledge when owning a WordPress page: how to find your site the best WordPress Hosting service. This process is often overlooked by most of the website owners. But it can be considered the most important key point to bring your site to stand out of the crowd. A great hosting service could help you to improve SEO and increase sales as well.</p>
+                <span>Learning Outcomes</span>
+                <ul>
+                    <li>Over 37 lectures and 55.5 hours of content!</li>
+                    <li>LIVE PROJECT End to End Software Testing Training Included.</li>
+                    <li>Learn Software Testing and Automation basics from a professional trainer from your own desk.</li>
+                    <li>Information packed practical training starting from basics to advanced testing techniques.</li>
+                    <li>Best suitable for beginners to advanced level users and who learn faster when demonstrated.</li>
+                    <li>Course content designed by considering current software testing technology and the job market.</li>
+                    <li>Practical assignments at the end of every session.</li>
+                    <li>Practical learning experience with live project work and examples.</li>
+                </ul>
+            </div>
+            <div class="acordian-pareent">
+                <div class="header-box">
+                    <span>Course Content</span>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="section-box">
+                    <div class="title-box">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p>
+                            <span class="title">Section 1</span>
+                            <span class="description">Perfect Inelasticity And Perfect</span>
+                        </p>
+                    </div>
+                    <div class="list-video">
+                        <div class="item">
+                            <div class="left-box">
+                                <i class="fa-regular fa-file"></i>
+                                <span>A Note On Asking For Help</span>
+                            </div>
+                            <div class="right-box">
+                                <div class="btn">Preview</div>
+                                <p>30 minutes</p>
+                                <span class="disabeld"><i class="fa-solid fa-lock"></i></span>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="left-box">
+                                <i class="fa-regular fa-file"></i>
+                                <span>A Note On Asking For Help</span>
+                            </div>
+                            <div class="right-box">
+                                <div class="btn">Preview</div>
+                                <p>30 minutes</p>
+                                <span class="disabeld"><i class="fa-solid fa-lock"></i></span>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="left-box">
+                                <i class="fa-regular fa-file"></i>
+                                <span>A Note On Asking For Help</span>
+                            </div>
+                            <div class="right-box">
+                                <div class="btn">Preview</div>
+                                <p>30 minutes</p>
+                                <span class="disabeld"><i class="fa-solid fa-lock"></i></span>
+                            </div>
+
+                        </div>
+                        <div class="item lock">
+                            <div class="left-box">
+                                <i class="fa-regular fa-file"></i>
+                                <span>A Note On Asking For Help</span>
+                            </div>
+                            <div class="right-box">
+
+                                <span class=""><i class="fa-solid fa-lock"></i></span>
+                            </div>
+
+                        </div>
+                        <div class="item lock" >
+                            <div class="left-box">
+                                <i class="fa-regular fa-file"></i>
+                                <span>A Note On Asking For Help</span>
+                            </div>
+                            <div class="right-box">
+
+                                <span class=""><i class="fa-solid fa-lock"></i></span>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="left-box">
+                                <i class="fa-regular fa-circle-question"></i>
+                                <span>Basic Quizzes 1</span>
+                            </div>
+                            <div class="right-box">
+
+                                <p>3 questions</p>
+                                <p>10 minutes</p>
+                                <span><i class="fa-solid fa-lock"></i></span>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="left-box">
+                                <i class="fa-regular fa-circle-question"></i>
+                                <span>Basic Quizzes 2</span>
+                            </div>
+                            <div class="right-box">
+
+                                <p>3 questions</p>
+                                <p>10 minutes</p>
+                                <span><i class="fa-solid fa-lock"></i></span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="section-box">
+                    <div class="title-box">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p>
+                            <span class="title">Section 2</span>
+                            <span class="description">Perfect Inelasticity And Perfect</span>
+                        </p>
+                    </div>
+                    <div class="list-video">
+                        <div class="item">
+                            <div class="left-box">
+                                <i class="fa-regular fa-file"></i>
+                                <span>A Note On Asking For Help</span>
+                            </div>
+                            <div class="right-box">
+                                <div class="btn">Preview</div>
+                                <p>30 minutes</p>
+                                <span class="disabeld"><i class="fa-solid fa-lock"></i></span>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="left-box">
+                                <i class="fa-regular fa-file"></i>
+                                <span>A Note On Asking For Help</span>
+                            </div>
+                            <div class="right-box">
+                                <div class="btn">Preview</div>
+                                <p>30 minutes</p>
+                                <span class="disabeld"><i class="fa-solid fa-lock"></i></span>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="left-box">
+                                <i class="fa-regular fa-file"></i>
+                                <span>A Note On Asking For Help</span>
+                            </div>
+                            <div class="right-box">
+                                <div class="btn">Preview</div>
+                                <p>30 minutes</p>
+                                <span class="disabeld"><i class="fa-solid fa-lock"></i></span>
+                            </div>
+
+                        </div>
+                        <div class="item lock">
+                            <div class="left-box">
+                                <i class="fa-regular fa-file"></i>
+                                <span>A Note On Asking For Help</span>
+                            </div>
+                            <div class="right-box">
+
+                                <span class=""><i class="fa-solid fa-lock"></i></span>
+                            </div>
+
+                        </div>
+                        <div class="item lock">
+                            <div class="left-box">
+                                <i class="fa-regular fa-file"></i>
+                                <span>A Note On Asking For Help</span>
+                            </div>
+                            <div class="right-box">
+
+                                <span class=""><i class="fa-solid fa-lock"></i></span>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="left-box">
+                                <i class="fa-regular fa-circle-question"></i>
+                                <span>Basic Quizzes 1</span>
+                            </div>
+                            <div class="right-box">
+
+                                <p>3 questions</p>
+                                <p>10 minutes</p>
+                                <span><i class="fa-solid fa-lock"></i></span>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="left-box">
+                                <i class="fa-regular fa-circle-question"></i>
+                                <span>Basic Quizzes 2</span>
+                            </div>
+                            <div class="right-box">
+
+                                <p>3 questions</p>
+                                <p>10 minutes</p>
+                                <span><i class="fa-solid fa-lock"></i></span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="instructor-box">
+                <p class="main-title">Instructor</p>
+                <div class="body-instructor">
+                    <div class="left-box">
+                        <img src="assets/images/21232f297a57a5a743894a0e4a801fc3.webp">
+                    </div>
+                    <div class="right-box">
+                        <span class="title">ThimPress</span>
+                        <span class="job">Developer</span>
+                        <p>
+                            If you are a newbie to managing a WordPress website, then congratulations! You are here on the right track with us because were are going to introduce you one of the most basic knowledge when owning a WordPress page: how to find your site the best WordPress Hosting services.
+                        </p>
+                        <ul>
+                            <li>Lorem Ipsum is simply dummy text of the printing </li>
+                            <li>Maecenas adipiscing aliquam condimentum</li>
+                            <li>Donec feugiat felis non justo viverr condimentuma</li>
+                            <li>There are many variations of passages</li>
+                            <li>Condimentuma feugiat adipiscing aliquam viverr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rating-box">
+                <div class="left-box">
+                    <span class="rate">0.0</span>
+                    <div class="star-box">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span class="count-rate">0 Rating</span>
+                </div>
+                <div class="right-box">
+                    <div class="statistics">
+                        <span class="count-star">5 stars</span>
+                        <div class="chart">
+                            <div class="gold-box"></div>
+                        </div>
+                        <span class="percent">30%</span>
+                    </div>
+                    <div class="statistics">
+                        <span class="count-star">4 stars</span>
+                        <div class="chart">
+<!--                            <div class="gold-box"></div>-->
+                        </div>
+                        <span class="percent">0%</span>
+                    </div>
+                    <div class="statistics">
+                        <span class="count-star">3 stars</span>
+                        <div class="chart">
+<!--                            <div class="gold-box"></div>-->
+                        </div>
+                        <span class="percent">0%</span>
+                    </div>
+                    <div class="statistics">
+                        <span class="count-star">2 stars</span>
+                        <div class="chart">
+<!--                            <div class="gold-box"></div>-->
+                        </div>
+                        <span class="percent">0%</span>
+                    </div>
+                    <div class="statistics">
+                        <span class="count-star">1 stars</span>
+                        <div class="chart">
+<!--                            <div class="gold-box"></div>-->
+                        </div>
+                        <span class="percent">0%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="related-courses">
+                <div class="header-box">
+                    Related Courses
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="swiper cours">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card-cours">
+                                <div class="img-box">
+                                    <img src="assets/images/course.webp">
+                                    <div class="text-img">
+                                        <div class="price">$22.00</div>
+                                        <div class="star-box">
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>LearnPress Master Web Design in Photoshop</p>
+                                    <span>July 21, 2022 / 1comment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-cours">
+                                <div class="img-box">
+                                    <img src="assets/images/course.webp">
+                                    <div class="text-img">
+                                        <div class="price">$22.00</div>
+                                        <div class="star-box">
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>LearnPress Master Web Design in Photoshop</p>
+                                    <span>July 21, 2022 / 1comment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-cours">
+                                <div class="img-box">
+                                    <img src="assets/images/course.webp">
+                                    <div class="text-img">
+                                        <div class="price">Free<span class="main-price">$2000</span></div>
+                                        <div class="star-box">
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>The Ultimate Ethical Hacking</p>
+                                    <span>July 21, 2022 / 1comment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-cours">
+                                <div class="img-box">
+                                    <img src="assets/images/course.webp">
+                                    <div class="text-img">
+                                        <div class="price">$22.00</div>
+                                        <div class="star-box">
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>LearnPress Master Web Design in Photoshop</p>
+                                    <span>July 21, 2022 / 1comment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-cours">
+                                <div class="img-box">
+                                    <img src="assets/images/course.webp">
+                                    <div class="text-img">
+                                        <div class="price">$22.00</div>
+                                        <div class="star-box">
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                            <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>LearnPress Master Web Design in Photoshop</p>
+                                    <span>July 21, 2022 / 1comment</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="info-cours">
+            <div class="header-cours">$22.00</div>
+            <div class="body-box">
+                <div class="btn-add">ADD TO CART</div>
+                <div class="includes-box">
+                    <span class="title">INCLUDES</span>
+                    <ul class="include-items">
+                        <li><i class="fa-regular fa-file-video"></i> 46 hours on-demand video</li>
+                        <li><i class="fa-regular fa-file-word"></i> 16 Articles</li>
+                        <li><i class="fa-solid fa-address-book"></i> 39 Supplemental Resources</li>
+                        <li><i class="fa-brands fa-pagelines"></i> Full lifetime access</li>
+                        <li><i class="fa-solid fa-language"></i> Language: English</li>
+                        <li><i class="fa-solid fa-certificate"></i> Certificate of Completion</li>
+                    </ul>
+                    <a class="link" href="#">have a coupon?</a>
+                </div>
+                <ul class="messenger">
+                    <li>
+                        <a class="link facebook" title="Facebook"  rel="nofollow"  target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link twitter" title="Twitter"  rel="nofollow" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link pinterest" title="Pinterest">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="LinkedIn" target="_blank" class="link linkedin" >
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="left-part">
+            <div class="cardpost">
+                <div class="logo">
+                    <img src="assets/images/logo-kit.webp" alt="">
+                </div>
+                <div class="info">
+                    <div class="ex phone">
+                        <i class="fa-solid fa-phone" style="color: #ffa0a0;"></i>
+                        <span>(04) 3245-6988</span>
+                    </div>
+                    <div class="ex email">
+                        <i class="fa-solid fa-envelope" style="color: #84cdf0"></i>
+                        <span>(04) 3245-6988</span>
+
+                    </div>
+                    <div class="ex addres">
+                        <i class="fa-solid fa-location-dot" style="color: #eec387"></i>
+                        <p>
+                            A26BT5 Building, SilverC<br> Street, London, England
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center-part">
+            <div class="Useful-Links">
+                <p class="title_center_part">USEFUL LINKS</p>
+                <div class="links">
+                    <a href="">About us</a>
+                    <a href="">Blog</a>
+                    <a href="">Buddy profile</a>
+                    <a href="">Become an instructor</a>
+                    <a href="">Membership</a>
+                </div>
+            </div>
+            <div class="Categories">
+                <p class="title_center_part">CATEGORIES</p>
+                <div class="links">
+                    <a href="">Web Development</a>
+                    <a href="">Design</a>
+                    <a href="">Business</a>
+                    <a href="">photography</a>
+                    <a href="">technology</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-part">
+            <div class="download-app">
+                <button id="app-store">
+                    <img decoding="async" src="https://coursebuilder.thimpress.com/demo-kit/wp-content/uploads/sites/25/2019/10/icon-footer.png" alt="iphone">
+                    APP STORE
+                </button>
+                <button id="google play">
+                    <img decoding="async" src="https://coursebuilder.thimpress.com/demo-kit/wp-content/uploads/sites/25/2019/10/icon-footer-2.png" alt="iphone">
+                    GOOGLE PLAY
+                </button>
+            </div>
+            <div class="email-part">
+                <div class="explain">
+                    <span >subcribe New letters</span>
+                    <p>Enter your email and we’ll send you more information.</p>
+                </div>
+                <form class="form" role="search">
+                    <input type="search" class="searachbox" name="q" placeholder="Enter email address"
+                           aria-label="Search through site content" />
+                    <button class="search-button ">SUBCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="linebar">
+        <div class="linebar_container">
+            <div class="powered-by">
+
+
+                <a href="" >Course Builder | Corporate Training WordPress Theme </a>
+                © Powered by
+                <a href=""> ThimPress.</a>
+
+
+            </div>
+            <div class="privacy">
+                <a href="">Tearm of use</a>
+                <a href="">Privacy policy</a>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+<div class="footer-fixed">
+    <div class="content-box">
+        <ul class="course-landing-tab">
+            <li role="presentation" class="course-nav-tab-overview">
+                <a href="#tab-overview">
+                    Overview </a>
+            </li>
+            <li role="presentation" class="course-nav-tab-curriculum">
+                <a href="#tab-curriculum">
+                    Curriculum </a>
+            </li>
+            <li role="presentation" class="course-nav-tab-instructor">
+                <a href="#tab-instructor">
+                    Instructor </a>
+            </li>
+            <li role="presentation" class="course-nav-tab-reviews">
+                <a href="#tab-reviews">
+                    Reviews </a>
+            </li>
+        </ul>
+        <div class="right-box">
+            <span>Free</span>
+            <div class="start-btn">START NOW</div>
+        </div>
+    </div>
+
+</div>
+<div class="quick-butttons">
+    <button class="cl quick-demos-button">
+            <span class="material-symbols-outlined">
+                widgets
+            </span>
+        Demos
+    </button>
+    <button class="cl quick-buy-now-button ">
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span>
+        Buy Now
+    </button>
+    <button class="cl quick-support-button">
+            <span class="material-symbols-outlined">
+                support_agent
+            </span>
+        Support
+    </button>
+</div>
+
+
+
+<script src="assets/javascript/cours.js"></script>
+<script src="assets/javascript/skill-plan.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Poppins:wght@300&family=Rubik:ital@1&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body class="light-color">
+
+
+<header class="header wrapper">
+
+    <nav>
+
+
+
+        <div class="berger_menu">
+
+            <i class="fa-solid fa-bars"></i>
+            <div class="m-menu__overlay" ></div>
+
+            <div class="m-menu">
+                <div class="m-menu__header">
+                    <span>Close</span>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <form class="search-menu" role="search-menu">
+                    <input type="searchbar-menu" class="serachbox-menu" name="q"
+                           placeholder="What do you looking for ?" aria-label="Search through site content" />
+                    <button class="searchbar-menu-button ">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="buy">
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </form>
+                <ul class="ul-menu">
+
+                    <li class="sub">
+                        <a href="">Demos</a>
+                        <i class="fa-solid fa-bars"></i>
+                    </li>
+                    <ul class="sunset demos-subset">
+                        <li><a href="">Demo Edu Institute</a></li>
+                        <li><a href="">Demo Coursify</a></li>
+                        <li><a href="">Demo eLearning II</a></li>
+                        <li><a href="">Demo Single Instructor</a></li>
+                        <li><a href="">Demo Test Prep</a></li>
+                        <li><a href="">Demo Corporate Learning</a></li>
+                        <li><a href="">Demo Courses TechCamps</a></li>
+                        <li><a href="">Demo Kit Builder</a></li>
+                        <li><a href="">Demo RTL</a></li>
+                    </ul>
+
+                    <li><a href="">About</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li class="sub"><a href="">Pages</a>
+                        <i class="fa-solid fa-bars"></i>
+                    </li>
+                    <ul class="sunset pages-subset dno">
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Membership</a></li>
+                        <li><a href="">Landing Page</a></li>
+                        <li><a href="">Forums</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Account</a></li>
+                        <li><a href="">Portfolio</a></li>
+                    </ul>
+                    <li><a href="">Contact</a></li>
+
+
+                </ul>
+                <div class="footer-menu">
+                        <span>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="" style="border-bottom: transparent;"> +(0123) 456 789</a>
+                        </span>
+                    <span>
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="" style="border-bottom: transparent;">
+                                info@thimpress.com
+                            </a>
+                        </span>
+
+                </div>
+                <div class=" footer-menu-logo ">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="assets/images/logo-kit.webp" alt="logo">
+        </div>
+
+        <ul class="menubar">
+            <li class="Sec Demos">
+                <a class="angle" href="#"> Demos</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="secmenubar Demosbar secmenubargrowupanimation">
+                    <li href=""><a href="">Demo learning engin</a></li>
+                    <li href=""><a href="">Demo learning engin</a></li>
+
+                    <li href=""><a href="">Demo learning engin</a></li>
+
+                    <li href=""><a href="" style="border-bottom: transparent !important;">Demo learning engin</a></li>
+
+                </ul>
+            </li>
+            <li class="Sec About">
+                <a href="#"> About</a>
+            </li>
+            <li class="Sec Courses">
+                <a class="angle" href="#"> Courses</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="secmenubar Coursesbar secmenubargrowupanimation">
+                    <ul class="Coursesbarmenu ">
+
+                        <h3 class="titleCoursesbarmenu">ABOUT COURSES</h3>
+                        <li href=""><a href="">Courses</a></li>
+                        <li href=""><a href="">Free Access Courses</a></li>
+                        <li href=""><a href="">Paid Courses</a></li>
+                        <li href=""><a href="" >Our Teachers</a></li>
+                        <li href=""><a href="" >Become an Instructor</a></li>
+                        <li href=""><a href="" >Collections</a></li>
+                        <li href=""><a href="" >Instructor Profile</a></li>
+                    </ul>
+
+                    <div class="images mantion-course">
+                        <div class="image-mantion-course">
+                            <img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <a href="">LearnPress Master Web Design in Photoshop</a>
+                            <h3>FREE</h3>
+                        </div>
+                    </div>
+                    <img width="226" height="auto" class="images" src="assets/images/menu-image_360.webp" alt="">
+                </ul>
+            </li>
+            <li class="Sec Pages">
+                <a class="angle" href="#"> Pages</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="secmenubar Pagesbar secmenubargrowupanimation">
+                    <li href=""><a href="">Demo learning engin</a></li>
+                    <li href=""><a href="">Demo learning engin</a></li>
+
+                    <li href=""><a href="">Demo learning engin</a></li>
+
+                    <li href=""><a href="" style="border-bottom: transparent !important;">Demo learning engin</a></li>
+                </ul>
+            </li>
+            <li class="Sec Contact">
+                <a href="#"> Contact</a>
+            </li>
+        </ul>
+        <div class="login-buy-button">
+            <div class="login-part">
+                <i class="fa-solid fa-user" style="color: #000000;"></i>
+                <a href="#">Login</a>
+            </div>
+            <div class=" buy-button ">
+                <button class="gradient-button gradient-button-3"
+                        style="outline: transparent; border: transparent;">Buy Cours</button><br />
+            </div>
+        </div>
+    </nav>
+
+
+</header>
+
+<div class="contant">
+    <div class="back-image">
+        <div class="data-page">
+            <div class="title-box">
+            <p class="title">Courses</p>
+            <p class="description">
+                THE BEST DEMO EDUCATION
+                Be successful with Course Builder theme.
+            </p>
+        </div>
+            <div class="all-courses-btn">Home / All courses</div>
+        </div>
+    </div>
+    <div class="popular-box">
+        <div class="blue-box">
+            <div class="text-box">
+                <span class="title">Popular Courses</span>
+                <p class="description">
+                    Learn to develop Android and iOS applications and Web Development within six weeks from a teacher
+                    with real-world experience. Get a 75% discount if you buy it here!
+                </p>
+                <span class="underline"></span>
+            </div>
+            <div class="swiper courses">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card-cours">
+                            <div class="img-box">
+                                <img src="assets/images/course.webp">
+                                <div class="text-img">
+                                    <div class="price">$22.00</div>
+                                    <div class="star-box">
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>LearnPress Master Web Design in Photoshop</p>
+                                <span>July 21, 2022 / 1comment</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-cours">
+                            <div class="img-box">
+                                <img src="assets/images/course.webp">
+                                <div class="text-img">
+                                    <div class="price">$22.00</div>
+                                    <div class="star-box">
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>LearnPress Master Web Design in Photoshop</p>
+                                <span>July 21, 2022 / 1comment</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-cours">
+                            <div class="img-box">
+                                <img src="assets/images/course.webp">
+                                <div class="text-img">
+                                    <div class="price">Free</div>
+                                    <div class="star-box">
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>The Ultimate Ethical Hacking</p>
+                                <span>July 21, 2022 / 1comment</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-cours">
+                            <div class="img-box">
+                                <img src="assets/images/course.webp">
+                                <div class="text-img">
+                                    <div class="price">$22.00</div>
+                                    <div class="star-box">
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>LearnPress Master Web Design in Photoshop</p>
+                                <span>July 21, 2022 / 1comment</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-cours">
+                            <div class="img-box">
+                                <img src="assets/images/course.webp">
+                                <div class="text-img">
+                                    <div class="price">$22.00</div>
+                                    <div class="star-box">
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                        <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>LearnPress Master Web Design in Photoshop</p>
+                                <span>July 21, 2022 / 1comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="gray-box"></div>
+    </div>
+    <div class="box2">
+        <div class="all-courses">
+            <div class="header-box">
+                <div class="left-box">
+                    <p><i class="fa-solid fa-list"></i></p>
+                    <p><i class="fa-solid fa-list"></i></p>
+                    <span>Showing 1-9 of 19 results</span>
+                </div>
+                <div class="right-box">
+                    <div class="search-box">
+                        <input type="text" class="input-search" placeholder="Search our courses"/>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="courses">
+                <div class="card-cours">
+                    <div class="img-box">
+                        <div class="overyimg">
+                            <div class="add-cart">ADD TO CART</div>
+                        </div>
+                        <img src="assets/images/course.webp">
+                        <div class="text-img">
+                            <div class="price">$22.00</div>
+                            <div class="star-box">
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>LearnPress Master Web Design in Photoshop</p>
+                        <span>July 21, 2022 / 1<br>comment</span>
+                    </div>
+                </div>
+                <div class="card-cours">
+                    <div class="img-box">
+                        <div class="overyimg">
+                            <div class="add-cart">ADD TO CART</div>
+                        </div>
+                        <img src="assets/images/course.webp">
+                        <div class="text-img">
+                            <div class="price">$22.00</div>
+                            <div class="star-box">
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>LearnPress Master Web Design in Photoshop</p>
+                        <span>July 21, 2022 / 1<br>comment</span>
+                    </div>
+                </div>
+                <div class="card-cours">
+                    <div class="img-box">
+                        <div class="overyimg">
+                            <div class="add-cart">ADD TO CART</div>
+                        </div>
+                        <img src="assets/images/course.webp">
+                        <div class="text-img">
+                            <div class="price">$22.00</div>
+                            <div class="star-box">
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>LearnPress Master Web Design in Photoshop</p>
+                        <span>July 21, 2022 / 1<br>comment</span>
+                    </div>
+                </div>
+                <div class="card-cours">
+                    <div class="img-box">
+                        <div class="overyimg">
+                            <div class="add-cart">ADD TO CART</div>
+                        </div>
+                        <img src="assets/images/course.webp">
+                        <div class="text-img">
+                            <div class="price">$22.00</div>
+                            <div class="star-box">
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>LearnPress Master Web Design in Photoshop</p>
+                        <span>July 21, 2022 / 1<br>comment</span>
+                    </div>
+                </div>
+                <div class="card-cours">
+                    <div class="img-box">
+                        <div class="overyimg">
+                            <div class="add-cart">ADD TO CART</div>
+                        </div>
+                        <img src="assets/images/course.webp">
+                        <div class="text-img">
+                            <div class="price">$22.00</div>
+                            <div class="star-box">
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>LearnPress Master Web Design in Photoshop</p>
+                        <span>July 21, 2022 / 1<br>comment</span>
+                    </div>
+                </div>
+                <div class="card-cours">
+                    <div class="img-box">
+                        <div class="overyimg">
+                            <div class="add-cart">ADD TO CART</div>
+                        </div>
+                        <img src="assets/images/course.webp">
+                        <div class="text-img">
+                            <div class="price">$22.00</div>
+                            <div class="star-box">
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>LearnPress Master Web Design in Photoshop</p>
+                        <span>July 21, 2022 / 1<br>comment</span>
+                    </div>
+                </div>
+                <div class="card-cours">
+                    <div class="img-box">
+                        <div class="overyimg">
+                            <div class="add-cart">ADD TO CART</div>
+                        </div>
+                        <img src="assets/images/course.webp">
+                        <div class="text-img">
+                            <div class="price">$22.00</div>
+                            <div class="star-box">
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>LearnPress Master Web Design in Photoshop</p>
+                        <span>July 21, 2022 / 1<br>comment</span>
+                    </div>
+                </div>
+                <div class="card-cours">
+                    <div class="img-box">
+                        <div class="overyimg">
+                            <div class="add-cart">ADD TO CART</div>
+                        </div>
+                        <img src="assets/images/course.webp">
+                        <div class="text-img">
+                            <div class="price">$22.00</div>
+                            <div class="star-box">
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>LearnPress Master Web Design in Photoshop</p>
+                        <span>July 21, 2022 / 1<br>comment</span>
+                    </div>
+                </div>
+                <div class="card-cours">
+                    <div class="img-box">
+                        <div class="overyimg">
+                            <div class="add-cart">ADD TO CART</div>
+                        </div>
+                        <img src="assets/images/course.webp">
+                        <div class="text-img">
+                            <div class="price">$22.00</div>
+                            <div class="star-box">
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                                <i class="fa-regular fa-star" style="color: #e2d118;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>LearnPress Master Web Design in Photoshop</p>
+                        <span>July 21, 2022 / 1<br>comment</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="asid-box">
+            <div class="categoris-box">
+                <span class="title-box">CATEGORIS</span>
+                <a>Business</a>
+                <a>Design</a>
+                <a>Marketing</a>
+                <a>MBA Courses</a>
+                <a>Photography</a>
+                <a>Photography And Designs</a>
+                <a>Technology</a>
+                <a>Web Development</a>
+            </div>
+            <div class="latest-box">
+                <span class="title-box">LATEST COURSES</span>
+                <div class="last-cours">
+                    <div class="box-img"><img src="assets/images/shutterstock_184641842-5-e1503472000521-109x109.webp"> </div>
+                    <div class="discription">
+                        <p class="title">LearnPress Master Web Design In Photoshop</p>
+                        <span class="price">FREE</span>
+                    </div>
+                </div>
+                <div class="last-cours">
+                    <div class="box-img"><img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg"> </div>
+                    <div class="discription">
+                        <p class="title">LearnPress Master Web Design In Photoshop</p>
+                        <span class="price">FREE</span>
+                    </div>
+                </div>
+                <div class="last-cours">
+                    <div class="box-img"><img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg"> </div>
+                    <div class="discription">
+                        <p class="title">LearnPress Master Web Design In Photoshop</p>
+                        <span class="price">FREE</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wordpres-box">
+                <img src="assets/images/wordpress-theme.webp">
+            </div>
+            <div class="latest-box">
+                <span class="title-box">LATEST POSTS</span>
+                <div class="last-cours">
+                    <div class="box-img"><img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg"> </div>
+                    <div class="discription">
+                        <p class="title">LearnPress Master Web Design In Photoshop</p>
+                        <span class="date">July 21, 2022</span>
+                    </div>
+                </div>
+                <div class="last-cours">
+                    <div class="box-img"><img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg"> </div>
+                    <div class="discription">
+                        <p class="title">LearnPress Master Web Design In Photoshop</p>
+                        <span class="date">July 21, 2022</span>
+                    </div>
+                </div>
+                <div class="last-cours">
+                    <div class="box-img"><img src="assets/images/shutterstock_184641842-5-e1503472000521-109x109.webp"> </div>
+                    <div class="discription">
+                        <p class="title">LearnPress Master Web Design In Photoshop</p>
+                        <span class="date">July 21, 2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box3">
+        <div class="overbox"></div>
+        <div class="contant">
+            <img src="assets/images/group-2.webp">
+            <div class="text-box">
+                <p class="title">
+                    TRUSTED BY OVER 6000+ STUDENTS
+                </p>
+                <p class="description">
+                    Join our community of students around the world helping you succeed.
+
+                </p>
+                <div class="start-btn">
+                    <span>GET STARTED</span>
+                    <i class="fa-solid fa-angle-up fa-rotate-90"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="left-part">
+            <div class="cardpost">
+                <div class="logo">
+                    <img src="assets/images/logo-kit.webp" alt="">
+                </div>
+                <div class="info">
+                    <div class="ex phone">
+                        <i class="fa-solid fa-phone" style="color: #ffa0a0;"></i>
+                        <span>(04) 3245-6988</span>
+                    </div>
+                    <div class="ex email">
+                        <i class="fa-solid fa-envelope" style="color: #84cdf0"></i>
+                        <span>(04) 3245-6988</span>
+
+                    </div>
+                    <div class="ex addres">
+                        <i class="fa-solid fa-location-dot" style="color: #eec387"></i>
+                        <p>
+                            A26BT5 Building, SilverC<br> Street, London, England
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center-part">
+            <div class="Useful-Links">
+                <p class="title_center_part">USEFUL LINKS</p>
+                <div class="links">
+                    <a href="">About us</a>
+                    <a href="">Blog</a>
+                    <a href="">Buddy profile</a>
+                    <a href="">Become an instructor</a>
+                    <a href="">Membership</a>
+                </div>
+            </div>
+            <div class="Categories">
+                <p class="title_center_part">CATEGORIES</p>
+                <div class="links">
+                    <a href="">Web Development</a>
+                    <a href="">Design</a>
+                    <a href="">Business</a>
+                    <a href="">photography</a>
+                    <a href="">technology</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-part">
+            <div class="download-app">
+                <button id="app-store">
+                    <img decoding="async" src="https://coursebuilder.thimpress.com/demo-kit/wp-content/uploads/sites/25/2019/10/icon-footer.png" alt="iphone">
+                    APP STORE
+                </button>
+                <button id="google play">
+                    <img decoding="async" src="https://coursebuilder.thimpress.com/demo-kit/wp-content/uploads/sites/25/2019/10/icon-footer-2.png" alt="iphone">
+                    GOOGLE PLAY
+                </button>
+            </div>
+            <div class="email-part">
+                <div class="explain">
+                    <span >subcribe New letters</span>
+                    <p>Enter your email and we’ll send you more information.</p>
+                </div>
+                <form class="form" role="search">
+                    <input type="search" class="searachbox" name="q" placeholder="Enter email address"
+                           aria-label="Search through site content" />
+                    <button class="search-button ">SUBCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="linebar">
+        <div class="linebar_container">
+            <div class="powered-by">
+
+
+                <a href="" >Course Builder | Corporate Training WordPress Theme </a>
+                © Powered by
+                <a href=""> ThimPress.</a>
+
+
+            </div>
+            <div class="privacy">
+                <a href="">Tearm of use</a>
+                <a href="">Privacy policy</a>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+<div class="quick-butttons">
+    <button class="cl quick-demos-button">
+            <span class="material-symbols-outlined">
+                widgets
+            </span>
+        Demos
+    </button>
+    <button class="cl quick-buy-now-button ">
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span>
+        Buy Now
+    </button>
+    <button class="cl quick-support-button">
+            <span class="material-symbols-outlined">
+                support_agent
+            </span>
+        Support
+    </button>
+</div>
+
+<button class="quick-direction">
+    <i class="fa-solid fa-angle-down"></i>
+</button>
+
+<script src="assets/javascript/courses.js"></script>
+<script src="assets/javascript/skill-plan.js"></script>
+</body>
+
+</html>

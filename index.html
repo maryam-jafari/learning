@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Poppins:wght@300&family=Rubik:ital@1&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body class="light-color">
+
+
+    <header class="header wrapper">
+
+        <nav>
+
+
+
+            <div class="berger_menu">
+
+                <i class="fa-solid fa-bars"></i>
+                <div class="m-menu__overlay" ></div>
+
+                <div class="m-menu">
+                    <div class="m-menu__header">
+                        <span>Close</span>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <form class="search-menu" role="search-menu">
+                        <input type="searchbar-menu" class="serachbox-menu" name="q"
+                               placeholder="What do you looking for ?" aria-label="Search through site content" />
+                        <button class="searchbar-menu-button ">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button class="buy">
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </form>
+                    <ul class="ul-menu">
+
+                        <li class="sub">
+                            <a href="">Demos</a>
+                            <i class="fa-solid fa-bars"></i>
+                        </li>
+                        <ul class="sunset demos-subset">
+                            <li><a href="">Demo Edu Institute</a></li>
+                            <li><a href="">Demo Coursify</a></li>
+                            <li><a href="">Demo eLearning II</a></li>
+                            <li><a href="">Demo Single Instructor</a></li>
+                            <li><a href="">Demo Test Prep</a></li>
+                            <li><a href="">Demo Corporate Learning</a></li>
+                            <li><a href="">Demo Courses TechCamps</a></li>
+                            <li><a href="">Demo Kit Builder</a></li>
+                            <li><a href="">Demo RTL</a></li>
+                        </ul>
+
+                        <li><a href="">About</a></li>
+                        <li><a href="">Courses</a></li>
+                        <li class="sub"><a href="">Pages</a>
+                            <i class="fa-solid fa-bars"></i>
+                        </li>
+                        <ul class="sunset pages-subset dno">
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Membership</a></li>
+                            <li><a href="">Landing Page</a></li>
+                            <li><a href="">Forums</a></li>
+                            <li><a href="">Events</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">Account</a></li>
+                            <li><a href="">Portfolio</a></li>
+                        </ul>
+                        <li><a href="">Contact</a></li>
+
+
+                    </ul>
+                    <div class="footer-menu">
+                        <span>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="" style="border-bottom: transparent;"> +(0123) 456 789</a>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="" style="border-bottom: transparent;">
+                                info@thimpress.com
+                            </a>
+                        </span>
+
+                    </div>
+                    <div class=" footer-menu-logo ">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="assets/images/logo-kit.webp" alt="logo">
+            </div>
+
+            <ul class="menubar">
+                <li class="Sec Demos">
+                    <a class="angle" href="#"> Demos</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <ul class="secmenubar Demosbar secmenubargrowupanimation">
+                        <li href=""><a href="">Demo learning engin</a></li>
+                        <li href=""><a href="">Demo learning engin</a></li>
+
+                        <li href=""><a href="">Demo learning engin</a></li>
+
+                        <li href=""><a href="" style="border-bottom: transparent !important;">Demo learning engin</a></li>
+
+                    </ul>
+                </li>
+                <li class="Sec About">
+                    <a href="#"> About</a>
+                </li>
+                <li class="Sec Courses">
+                    <a class="angle" href="#"> Courses</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <ul class="secmenubar Coursesbar secmenubargrowupanimation">
+                        <ul class="Coursesbarmenu ">
+
+                            <h3 class="titleCoursesbarmenu">ABOUT COURSES</h3>
+                            <li href=""><a href="">Courses</a></li>
+                            <li href=""><a href="">Free Access Courses</a></li>
+                            <li href=""><a href="">Paid Courses</a></li>
+                            <li href=""><a href="" >Our Teachers</a></li>
+                            <li href=""><a href="" >Become an Instructor</a></li>
+                            <li href=""><a href="" >Collections</a></li>
+                            <li href=""><a href="" >Instructor Profile</a></li>
+                        </ul>
+
+                        <div class="images mantion-course">
+                            <div class="image-mantion-course">
+                                <img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <a href="">LearnPress Master Web Design in Photoshop</a>
+                                <h3>FREE</h3>
+                            </div>
+                        </div>
+                        <img width="226" height="auto" class="images" src="assets/images/menu-image_360.webp" alt="">
+                    </ul>
+                </li>
+                <li class="Sec Pages">
+                    <a class="angle" href="#"> Pages</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <ul class="secmenubar Pagesbar secmenubargrowupanimation">
+                        <li href=""><a href="">Demo learning engin</a></li>
+                        <li href=""><a href="">Demo learning engin</a></li>
+
+                        <li href=""><a href="">Demo learning engin</a></li>
+
+                        <li href=""><a href="" style="border-bottom: transparent !important;">Demo learning engin</a></li>
+                    </ul>
+                </li>
+                <li class="Sec Contact">
+                    <a href="#"> Contact</a>
+                </li>
+            </ul>
+            <div class="login-buy-button">
+                <div class="login-part">
+                    <i class="fa-solid fa-user" style="color: #000000;"></i>
+                    <a href="#">Login</a>
+                </div>
+                <div class=" buy-button ">
+                    <button class="gradient-button gradient-button-3"
+                        style="outline: transparent; border: transparent;">Buy Cours</button><br />
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <div class="contant">
+        <div class="searchpart">
+
+                <div class="body_search_box">
+                    <div class="paragraph">
+                        <h2 class="p1">Create and sell your</h2>
+                        <h2 class="p2">own beautiful online courses</h2>
+                    </div>
+                    <div>
+                        <form class="form" role="search">
+                            <input type="search" class="searachbox" name="q" placeholder="What do you to learn today?"
+                                   aria-label="Search through site content" />
+                            <div class="border-bottun btn">
+                                <button class="search-button btn" id="btn-search-part">SEARCH</button>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <img id="headerpictur" src="assets/images/header-search-1024x409.webp" alt="serch pictur">
+                    </div>
+                </div>
+
+
+        </div>
+        <div class="cardboxlist">
+            <div class="cardbox learn">
+                <p class="circle" style="background-color: var(--facebook-color)">
+                     <span class="material-symbols-outlined ">
+                        school
+                    </span>
+                </p>
+
+                <div class="par">
+                    <a href="#">Learn From The Experts </a>
+                    <p>Lorem ipsum dolor amet elit, sed do eiusmod tempor doincididunt lorem adipisicing eiusmod ipsum.</p>
+                </div>
+            </div>
+            <div class="cardbox book">
+                <p class="circle" >
+                    <span class="material-symbols-outlined circle">
+                        menu_book
+                    </span>
+                </p>
+                <div class="par">
+                    <a href="">Book Library & Store</a>
+                    <p>Lorem ipsum dolor amet elit, sed do eiusmod tempor doincididunt lorem adipisicing eiusmod ipsum.</p>
+                </div>
+
+            </div>
+            <div class="cardbox education">
+            <p class="circle" style="background-color: var(--color-item-third)">
+              <span class="material-symbols-outlined ">
+                    workspace_premium
+              </span>
+            </p>
+
+                <div class="par">
+                    <a href="">Online Education </a>
+                    <p>Lorem ipsum dolor amet elit, sed do eiusmod tempor doincididunt lorem adipisicing eiusmod ipsum.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="welcompart">
+            <div class="welcom_img">
+                <img class="pictur" src="assets/images/welcompictur-1.webp" alt="">
+            </div>
+            <div class="explain">
+                <div class="paragragh">
+                    <h1 class="h1">welcome to</h1>
+                    <h1 class="h2">CourseBuider Kit</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip. Adipisicing elit, sed do eiusmod tempor incididunt.
+                    </p>
+                </div>
+                <div class="border-bottun btn">
+                    <button class="view-button btn" id="">VIEW ALL</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="categoriespart">
+            <div class="all-categories">
+                <div class="paragragh">
+                    <h1 class="title">Top Categories</h1>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class="back-swiper">
+                    <div class="swiper swiper1">
+                        <div class="cardcat swiper-wrapper">
+                            <div class="blue cd be-boss swiper-slide ">
+                                <h2>BE YOUR OWN BOSS</h2>
+                                <p>9 courses</p>
+                                <img class="cdpic" src="assets/images/collection-2.webp" alt="">
+                                <img class="cdbck" src="assets/images/bl-collection.webp" alt="">
+                            </div>
+                            <div class="cd creat-exam swiper-slide green betop">
+                                <h2>CERTIFICATION EXAM</h2>
+                                <p>10 courses</p>
+                                <img class="cdpic" src="assets/images/collection-1.webp" alt="">
+                                <img class="cdbck" src="assets/images/bl-collection.webp" alt="">
+                            </div>
+                            <div class="gold cd advance swiper-slide ">
+                                <h2>ADVANCE CAREER</h2>
+                                <p>8 courses</p>
+                                <img class="cdpic" src="assets/images/collection-4.webp" alt="">
+                                <img class="cdbck" src="assets/images/bl-collection.webp" alt="">
+                            </div>
+                            <div class="red cd intructory swiper-slide betop">
+                                <h2>INTRODUCTORY COURSES</h2>
+                                <p>8 courses</p>
+                                <img class="cdpic" src="assets/images/collection-1.webp" alt="">
+                                <img class="cdbck" src="assets/images/bl-collection.webp" alt="">
+                            </div>
+                            <div class=" green cd wordpress swiper-slide ">
+                                <h2>WORDPESS</h2>
+                                <p>13 courses</p>
+                                <img class="cdpic" src="assets/images/collection-1.webp" alt="">
+                                <img class="cdbck" src="assets/images/bl-collection.webp" alt="">
+                            </div>
+                            <div class="gold cd business swiper-slide betop">
+                                <h2>BUSINESS</h2>
+                                <p>14 courses</p>
+                                <img class="cdpic" src="assets/images/collection-3.webp" alt="">
+                                <img class="cdbck" src="assets/images/bl-collection.webp" alt="">
+                            </div>
+                            <div class="red cd design swiper-slide ">
+                                <h2>DESIGN</h2>
+                                <p>8 courses</p>
+                                <img class="cdpic" src="assets/images/collection-4.webp" alt="">
+                                <img class="cdbck" src="assets/images/bl-collection.webp" alt="">
+                            </div>
+                            <div class="green cd software-development swiper-slide betop">
+                                <h2>SOFTWARREDEVELOPMENT</h2>
+                                <p>12courses</p>
+                                <img class="cdpic" src="assets/images/collection-3.webp" alt="">
+                                <img class="cdbck" src="assets/images/bl-collection.webp" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </div>
+        <div class="skillpart">
+            <div class="skill-plan" onscroll="setchangesrefres()">
+                <div class="texts">
+                    <h2>Trusted by thousands</h2>
+                    <h1>of Educators in the World</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip. Adipisicing elit, sed do eiusmod</p>
+
+                    <img src="assets/images/skill.webp" alt="">
+                </div>
+                <div class="skillpoint">
+                    <div class="clr students">
+                        <p>
+
+                            <span class="bluecolor counter" data-target="2000">2000</span>
+                            <span class="bluecolor">+</span>
+                        </p>
+                        <h3>students</h3>
+                    </div>
+                    <div class="clr courses">
+                        <p>
+
+                            <span class="goldcolor counter" data-target="1000">1000</span>
+                            <span class="goldcolor">+</span>
+                        </p>
+
+                        <h3>courses</h3>
+
+                    </div>
+
+                    <div class="clr star">
+                        <img class="image-upload" src="https://coursebuilder.thimpress.com/demo-kit/wp-content/uploads/sites/25/2019/10/counter-center.png">
+                    </div>
+
+                    <div class="clr teachers">
+                        <p>
+
+                            <span class="redcolor counter" data-target="1500">1500</span>
+                            <span class="redcolor">+</span>
+                        </p>
+
+                        <h3>teachers</h3>
+                    </div>
+                    <div class="clr products">
+                        <p>
+
+                            <span class="greencolor counter" data-target="1200">1200</span>
+                            <span class="greencolor">+</span>
+                        </p>
+
+                        <h3>products</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="allbox-coursescards">
+            <div class="topcourses">
+                <div class="texts">
+                    <h1>Our Top Course</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class="coursescard">
+                    <div class="card">
+                        <div class="letterhead">
+                            <a href="">Business</a>
+                        </div>
+                        <div class="extera-part"></div>
+                        <img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg" alt="">
+
+                        <div class="text-box">
+                            <a href="" id="tittle">Affiliate Marketing - A Beginner's Guide </a>
+                            <div class="letterdown">
+                                <div class="explain">
+                                    <i class="fa-solid fa-star" style="color: #f8b56c;"></i>
+                                    <span> 0 Star (0 volte)</span>
+                                </div>
+                                <h3 class="price">$22.00</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="letterhead">
+                            <a href="">Business</a>
+                        </div>
+                        <div class="extera-part"></div>
+                        <img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg" alt="">
+
+                        <div class="text-box">
+                            <a href="" id="tittle">Affiliate Marketing - A Beginner's Guide </a>
+                            <div class="letterdown">
+                                <div class="explain">
+                                    <i class="fa-solid fa-star" style="color: #f8b56c;"></i>
+                                    <span> 0 Star (0 volte)</span>
+                                </div>
+                                <h3 class="price">$22.00</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="letterhead">
+                            <a href="">Business</a>
+                        </div>
+                        <div class="extera-part"></div>
+                        <img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg" alt="">
+
+                        <div class="text-box">
+                            <a href="" id="tittle">Affiliate Marketing - A Beginner's Guide </a>
+                            <div class="letterdown">
+                                <div class="explain">
+                                    <i class="fa-solid fa-star" style="color: #f8b56c;"></i>
+                                    <span> 0 Star (0 volte)</span>
+                                </div>
+                                <h3 class="price">$22.00</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="letterhead">
+                            <a href="">Business</a>
+                        </div>
+                        <div class="extera-part"></div>
+                        <img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg" alt="">
+
+                        <div class="text-box">
+                            <a href="" id="tittle">Affiliate Marketing - A Beginner's Guide </a>
+                            <div class="letterdown">
+                                <div class="explain">
+                                    <i class="fa-solid fa-star" style="color: #f8b56c;"></i>
+                                    <span> 0 Star (0 volte)</span>
+                                </div>
+                                <h3 class="price">$22.00</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="letterhead">
+                            <a href="">Business</a>
+                        </div>
+                        <div class="extera-part"></div>
+                        <img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg" alt="">
+
+                        <div class="text-box">
+                            <a href="" id="tittle">Affiliate Marketing - A Beginner's Guide </a>
+                            <div class="letterdown">
+                                <div class="explain">
+                                    <i class="fa-solid fa-star" style="color: #f8b56c;"></i>
+                                    <span> 0 Star (0 volte)</span>
+                                </div>
+                                <h3 class="price">$22.00</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="letterhead">
+                            <a href="">Business</a>
+                        </div>
+                        <div class="extera-part"></div>
+                        <img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg" alt="">
+
+                        <div class="text-box">
+                            <a href="" id="tittle">Affiliate Marketing - A Beginner's Guide </a>
+                            <div class="letterdown">
+                                <div class="explain">
+                                    <i class="fa-solid fa-star" style="color: #f8b56c;"></i>
+                                    <span> 0 Star (0 volte)</span>
+                                </div>
+                                <h3 class="price">$22.00</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="parent-btn">
+                        <div class="border-bottun ">
+                            <button class="btn courses">VIEW ALL COURSES</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="create-account">
+            <div class="picture">
+                <img src="assets/images/contact-img.webp" alt="">
+
+            </div>
+            <div class="mainpart">
+                <h1>
+                    Create Your Free Account
+                </h1>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                </h4>
+                <button class="btn">CREATE NOW</button>
+            </div>
+        </div>
+        <div class="brands">
+            <div class="back-swiper2">
+                <div class=" swiper swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/images/client-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/client-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/client-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/client-4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/client-5.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/client-6.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/client-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/client-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar" style="display: none"></div>
+<!--                    <div class="swiper-button-next"></div>-->
+<!--                    <div class="swiper-button-prev"></div>-->
+                </div>
+            </div>
+        </div>
+        <div class="feedbackslider">
+            <h1 class="tittle">Clients Feedback</h1>
+
+            <div class="back-swiper3">
+                <div class="swiper swiper3 feedbackswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ut labore et dolore. </p>
+                            <div class="explainprofile">
+                                <div class="explain-profile-text">
+                                    <a href="">
+                                        lydisata
+                                    </a>
+                                    <h6>
+                                        - webdeveloper
+                                    </h6>
+                                </div>
+                                <div class="stars">
+                            <span class="material-symbols-outlined">
+                                star
+                            </span>
+                                    <span class="material-symbols-outlined">
+                                star
+                            </span>
+                                    <span class="material-symbols-outlined">
+                                star
+                            </span>
+                                    <span class="material-symbols-outlined">
+                                star
+                            </span>
+                                    <span class="material-symbols-outlined">
+                                star
+                            </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ut labore et dolore. </p>
+                            <div class="explain-profile-text">
+                                <a href="">
+                                    lydisata
+                                </a>
+                                <h6>
+                                    - webdeveloper
+                                </h6>
+                            </div>
+                            <div class="stars">
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                                <span class="material-symbols-outlined">
+                            star
+                        </span>
+                                <span class="material-symbols-outlined">
+                            star
+                        </span>
+                                <span class="material-symbols-outlined">
+                            star
+                        </span>
+                                <span class="material-symbols-outlined">
+                            star
+                        </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <p>
+
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ut labore et dolore.
+                            </p>
+                            <div class="explain-profile-text">
+                                <a href="">
+                                    lydisata
+                                </a>
+                                <h6>
+                                    - webdeveloper
+                                </h6>
+                            </div>
+                            <div class="stars">
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                                <span class="material-symbols-outlined">
+                            star
+                        </span>
+                                <span class="material-symbols-outlined">
+                            star
+                        </span>
+                                <span class="material-symbols-outlined">
+                            star
+                        </span>
+                                <span class="material-symbols-outlined">
+                            star
+                        </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="latestcard">
+            <div class="explains">
+                <h1>Lastest New</h1>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+
+                <div class="border-bottun ">
+                    <button class="more-button btn" id="">VIEW MORE</button>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg" alt="">
+                    <div class="texts">
+                        <a href="" id="tittle">Affiliate Marketing - A Beginner's Guide </a>
+                        <div class="letterdown">
+                            <div class="explain">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                                <h5>ThimPress</h5>
+                            </div>
+
+                            <div class="smss">
+                            <span class="material-symbols-outlined">
+                                sms
+                            </span>
+                                <h3 class="sms">0</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg" alt="">
+                    <div class="texts">
+                        <a href="" id="tittle">Affiliate Marketing - A Beginner's Guide </a>
+                        <div class="letterdown">
+                            <div class="explain">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                                <h5>ThimPress</h5>
+                            </div>
+
+                            <div class="smss">
+                            <span class="material-symbols-outlined">
+                                sms
+                            </span>
+                                <h3 class="sms">0</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/pexels-photo-40120-e1500018015404-1-342x252.jpg" alt="">
+                    <div class="texts">
+                        <a href="" id="tittle">Affiliate Marketing - A Beginner's Guide </a>
+                        <div class="letterdown">
+                            <div class="explain">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                                <h5>ThimPress</h5>
+                            </div>
+
+                            <div class="smss">
+                            <span class="material-symbols-outlined">
+                                sms
+                            </span>
+                                <h3 class="sms">0</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="left-part">
+                <div class="cardpost">
+                    <div class="logo">
+                        <img src="assets/images/logo-kit.webp" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="ex phone">
+                            <i class="fa-solid fa-phone" style="color: #ffa0a0;"></i>
+                            <span>(04) 3245-6988</span>
+                        </div>
+                        <div class="ex email">
+                            <i class="fa-solid fa-envelope" style="color: #84cdf0"></i>
+                            <span>(04) 3245-6988</span>
+
+                        </div>
+                        <div class="ex addres">
+                            <i class="fa-solid fa-location-dot" style="color: #eec387"></i>
+                            <p>
+                                A26BT5 Building, SilverC<br> Street, London, England
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center-part">
+                <div class="Useful-Links">
+                    <p class="title_center_part">USEFUL LINKS</p>
+                    <div class="links">
+                        <a href="">About us</a>
+                        <a href="">Blog</a>
+                        <a href="">Buddy profile</a>
+                        <a href="">Become an instructor</a>
+                        <a href="">Membership</a>
+                    </div>
+                </div>
+                <div class="Categories">
+                    <p class="title_center_part">CATEGORIES</p>
+                    <div class="links">
+                        <a href="">Web Development</a>
+                        <a href="">Design</a>
+                        <a href="">Business</a>
+                        <a href="">photography</a>
+                        <a href="">technology</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-part">
+                <div class="download-app">
+                    <button id="app-store">
+                        <img decoding="async" src="https://coursebuilder.thimpress.com/demo-kit/wp-content/uploads/sites/25/2019/10/icon-footer.png" alt="iphone">
+                        APP STORE
+                    </button>
+                    <button id="google play">
+                        <img decoding="async" src="https://coursebuilder.thimpress.com/demo-kit/wp-content/uploads/sites/25/2019/10/icon-footer-2.png" alt="iphone">
+                        GOOGLE PLAY
+                    </button>
+                </div>
+                <div class="email-part">
+                    <div class="explain">
+                        <span >subcribe New letters</span>
+                        <p>Enter your email and we’ll send you more information.</p>
+                    </div>
+                    <form class="form" role="search">
+                        <input type="search" class="searachbox" name="q" placeholder="Enter email address"
+                               aria-label="Search through site content" />
+                        <button class="search-button ">SUBCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="linebar">
+            <div class="linebar_container">
+                <div class="powered-by">
+
+
+                    <a href="" >Course Builder | Corporate Training WordPress Theme </a>
+                    © Powered by
+                    <a href=""> ThimPress.</a>
+
+
+                </div>
+                <div class="privacy">
+                    <a href="">Tearm of use</a>
+                    <a href="">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <div class="quick-butttons">
+        <button class="cl quick-demos-button">
+            <span class="material-symbols-outlined">
+                widgets
+            </span>
+            Demos
+        </button>
+        <button class="cl quick-buy-now-button ">
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span>
+            Buy Now
+        </button>
+        <button class="cl quick-support-button">
+            <span class="material-symbols-outlined">
+                support_agent
+            </span>
+            Support
+        </button>
+    </div>
+
+    <button class="quick-direction">
+        <i class="fa-solid fa-angle-down"></i>
+    </button>
+
+    <script src="assets/javascript/mainjavascript.js"></script>
+    <script src="assets/javascript/skill-plan.js"></script>
+</body>
+
+</html>
