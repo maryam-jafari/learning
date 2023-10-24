@@ -3944,6 +3944,12 @@ span {
     color: var(--color-item-third);
     z-index: 100;
 }
+.contant-contact .swiper-parent .img-box{
+    width: 50%;
+}
+.contant-contact .swiper-parent .img-box img{
+    width: 100%;
+}
 .contant-contact .swiper-pagination {
     text-align: left;
 }
@@ -3993,7 +3999,7 @@ span {
     height: 45px;
     border: 1px solid #e6e6e6;
     border-radius: 5px;
-    padding:  0 10px;
+    padding:  0 20px;
     flex: 1;
     cursor: auto;
 }
@@ -4008,12 +4014,31 @@ span {
     width: 100%;
     margin-top: 20px;
     border: 1px solid #e6e6e6;
-    padding: 10px;
+    padding: 20px;
     resize: vertical;
 }
 .contant-contact .message-box textarea:hover,.contant-contact .message-box textarea:focus-visible{
     border-color: var(--color-item-third);
     outline: none;
+}
+.contant-contact .inpus-box input::-webkit-input-placeholder,.contant-contact .message-box textarea::-webkit-input-placeholder {
+    font-family:  sans-serif;
+    font-style: italic;
+    font-size: 16px;
+}
+.contant-contact .message-box .btn-send{
+    padding: 5px;
+    width: 320px;
+    height:55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-item-third);
+    color: var(--main-color);
+    font-size: 16px;
+    font-family:sans-serif;
+    margin:30px auto;
+    border-radius: 30px;
 }
 @media screen and (min-width:2200px){
     .categoriespart{
@@ -4265,16 +4290,27 @@ span {
     .back-image{
         background-attachment: unset;
     }
+/*   contact */
+    .contant-contact .blue-box .icons-box{
+        gap: 0 ;
+    }
+    .contant-contact .blue-box .icons-box .circle{
+        width: 170px;
+        height: 170px;
+    }
+    .contant-contact .blue-box .icons-box .description{
+        width: 200px;
+    }
+    .contant-contact .swiper-parent .swiper-slide{
+        font-size: 20px;
+    }
+    .contant-contact .message-box .title{
+        font-size: 24px;
+    }
 
 }
-/*@media screen and (max-width:650px){*/
-/*    .all-courses .courses .card-cours{*/
-/*        width: 100%;*/
-/*    }*/
-/*    .all-courses .header-box {*/
-/*        flex-direction: column;*/
-/*    }*/
-/*}*/
+
+
 @media screen and (max-width:650px){
     .buy-button{
         display: none;
@@ -4617,6 +4653,37 @@ span {
     }
     .all-courses .courses .card-cours{
         width: 100%;
+    }
+/*    contact*/
+    .contant-contact .inpus-box{
+        flex-direction: column;
+        gap: 20px 0;
+    }
+    .contant-contact .inpus-box input{
+        flex: auto;
+    }
+    .contant-contact .swiper-parent{
+        flex-direction: column;
+    }
+    .contant-contact .blue-box .icons-box{
+        flex-direction: column;
+    }
+    .contant-contact .swiper-parent .img-box{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contant-contact .swiper-parent .back-swiper-contact{
+        width: 100%;
+    }
+    .contant-contact .blue-box .icons-box .circle{
+        width: 120px;
+        height: 120px;
+        font-size: 30px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .contant-contact .blue-box{
+        padding: 50px 0;
     }
 }
 @media screen and (max-width:375px){
