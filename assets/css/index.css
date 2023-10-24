@@ -573,14 +573,14 @@ nav {
 .header .Sec {
     display: flex;
     justify-content: space-around;
-
+    padding-right: 20px;
     position: relative;
     font-size: 15px;
     align-items: center;
 
 }
 .header .Sec > i{
-    padding: 2px 20px 0px 10px;
+    padding: 2px 0px 0px 10px;
     font-size: 10px;
 }
 /*.header .Demos a{*/
@@ -594,13 +594,11 @@ nav {
 
 /*}*/
 .header .Sec .angle{
-    padding: 20px 0 20px 23px ;
+    padding: 20px 2px 20px 23px ;
     line-height: 15px;
+    font-weight: 600;
 }
-.header .About{
-    padding: 20px 23px;
-    line-height: 15px;
-}
+
 .header .fa-user{
     font-size: 11px;
     padding-right: 10px;
@@ -825,7 +823,7 @@ a{
 }
 .cardboxlist .circle{
     font-size: 50px;
-    background-color: #ffa0a0;
+
     border-radius: 50%;
     width: 90px;
     height: 90px;
@@ -833,6 +831,12 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.cardboxlist .cardbox:nth-child(even) .circle{
+    background-color: #ffa0a0;
+}
+.cardboxlist .cardbox:nth-child(odd) .circle{
+    background-color: var(--facebook-color);
 }
 .cardboxlist .circle span{
     font-size:50px ;
@@ -921,7 +925,7 @@ a{
     padding-top: 40px;
 }
 .footer-container .Useful-Links{
-    padding-right: 70px;
+    /*padding-right: 70px;*/
     padding-left: 30px;
 }
 .footer-container .links{
@@ -1260,7 +1264,7 @@ a{
 }
 
 .categoriespart .paragragh p {
-   font-size: 15px;
+    font-size: 15px;
     font-family: "Open Sans";
     font-weight: 400;
     color:var(--main-des-color) ;
@@ -1507,6 +1511,7 @@ a{
 /* //////////////////allbox///////////////////////// */
 
 .allbox-coursescards {
+
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1546,6 +1551,7 @@ a{
 }
 
 .topcourses .coursescard {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -1572,9 +1578,7 @@ a{
     width: 30%;
 }
 
-.topcourses .coursescard .card:hover {
-    background: var(--color-item-second);
-}
+
 .topcourses .coursescard .card:hover .explain{
     color: #eee !important;
 }
@@ -1686,7 +1690,7 @@ a{
     border-radius: 7px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    background: var(--color-item-second);
+
     position: absolute;
     z-index: 2;
 }
@@ -1712,6 +1716,7 @@ a{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     z-index: 0;
+    height: 243px;
 }
 
 .card #tittle {
@@ -1900,7 +1905,7 @@ span {
 
 .feedbackslider .swiper-pagination-bullet-active {}
 
-.swiper-pagination {
+.back-swiper3 .swiper-pagination,.developer .swiper-pagination {
     top: 10px !important;
     position: absolute !important;
     z-index: 1;
@@ -2142,13 +2147,17 @@ span {
     background: var(--color-item-third);
     border: transparent;
     border-radius: 50%;
-    padding: 10px 11px;
+
     z-index: 200;
     cursor: pointer;
-    display: block;
-    align-items: center;
     transition: 0.5s;
     bottom: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .quick-direction .fa-angle-down{
     transform: rotate(180deg);
@@ -2286,18 +2295,18 @@ span {
     width: 100%;
     height: 100%;
 }
-.blue-box{
+.popular-box .blue-box{
     background-color: var(--blue-color);
     padding: 105px 20px 0;
     height: 584px;
     box-sizing: content-box;
 }
-.blue-box .text-box{
+.popular-box .blue-box .text-box{
     padding-bottom: 50px;
     background-color: transparent;
 }
 
-.blue-box .title{
+.popular-box .blue-box .title{
     font-family: Poppins;
     font-size: 44px;
     font-weight: 400;
@@ -2307,7 +2316,7 @@ span {
     display: block;
     text-align: center;
 }
-.blue-box .description{
+.popular-box .blue-box .description{
     font-size: 15px;
     font-family: "Open Sans";
     font-width: 400;
@@ -2319,12 +2328,12 @@ span {
 
 }
 
-.blue-box .swiper {
+.popular-box .blue-box .swiper {
     width: min(1546px,95%);
     padding-bottom: 40px;
 }
 
-.blue-box .swiper-slide {
+.popular-box .blue-box .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -2332,36 +2341,38 @@ span {
     justify-content: center;
     align-items: center;
 }
-.blue-box .img-box{
+.popular-box .blue-box .img-box{
     height: 403px;
     width: 100%;
     overflow: hidden;
     position: relative;
 
 }
-.blue-box .img-box img{
+.popular-box .blue-box .img-box img{
     width: 100%;
     transition: .5s ease-in-out;
     height: 100%;
+    object-fit: cover;
 }
-.blue-box .img-box .text-img{
+.popular-box .blue-box .img-box .text-img{
     display: flex;
     justify-content: space-between;
     position: absolute;
     bottom: 0;
     width: 100%;
     align-items: center;
+    z-index: 20;
 }
-.blue-box .img-box .star-box{
+.popular-box .blue-box .img-box .star-box{
     display: flex;
     padding-right: 15px;
 
 }
-.blue-box .img-box .star-box i{
+.popular-box .blue-box .img-box .star-box i{
     padding: 0 3px;
     font-size: 12px;
 }
-.blue-box .img-box .price{
+.popular-box .blue-box .img-box .price{
     background-color: var(--main-color);
     color: var(--color-item-third);
     padding: 12px 20px;
@@ -2372,10 +2383,10 @@ span {
     font-family: Poppins;
     font-weight: 600;
 }
-.blue-box .card-cours{
+.popular-box .blue-box .card-cours{
     width: 100%;
 }
-.blue-box .card-cours .text{
+.popular-box .blue-box .card-cours .text{
     padding: 20px 30px;
 }
 .card-cours .text p{
@@ -2503,7 +2514,7 @@ span {
     position: relative;
 
 }
-.all-courses .img-box .overyimg{
+.img-box .overyimg{
     width: 100%;
     height: 100%;
     background-color: rgba(33,33,33,0.5);
@@ -2517,7 +2528,7 @@ span {
     transition: 0.3s;
     opacity: 0;
 }
-.all-courses .img-box .overyimg .add-cart{
+.img-box .overyimg .add-cart{
     width: 140px;
     height: 45px;
     border-radius: 22px;
@@ -2535,22 +2546,23 @@ span {
     transition-delay: 0.2s;
     cursor: pointer;
 }
-.all-courses .img-box .overyimg .add-cart:hover{
+.img-box .overyimg .add-cart:hover{
     background-color: var(--color-item-third);
     border: 2px solid var(--color-item-third);
 }
 
-.all-courses .img-box:hover .overyimg{
+.img-box:hover .overyimg{
 
     opacity: 1;
 }
-.all-courses .img-box:hover .add-cart{
+.img-box:hover .add-cart{
     opacity: 1;
 }
 .all-courses .img-box img{
     width: 100%;
     transition: .5s ease-in-out;
     height: 100%;
+    object-fit: cover;
 }
 .all-courses .img-box .text-img{
     display: flex;
@@ -2720,7 +2732,7 @@ span {
     cursor: pointer;
 }
 .box3 .contant .start-btn:hover{
-   background-color: rgba(121,217,199,0.7);
+    background-color: rgba(121,217,199,0.7);
 }
 /*cours*/
 .contant-cours{
@@ -2756,6 +2768,8 @@ span {
 }
 .img-cours{
     width: 100%;
+
+    object-fit: cover;
     /*margin: auto;*/
     /*margin-top: -162px;*/
     /*margin-right: 8%;*/
@@ -3832,6 +3846,175 @@ span {
     padding-left: 5px;
 
 }
+/* contact */
+.contant-contact .blue-box{
+    background-color: var(--blue-color);
+    padding: 105px 20px;
+
+    box-sizing: content-box;
+}
+.contant-contact .blue-box .icons-box{
+    display: flex;
+    justify-content: space-around;
+    width: min(90%,1140px);
+    margin: auto;
+    gap: 0 50px;
+}
+.contant-contact .blue-box .icons-box div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    flex: 1;
+    transition:  0.3s;
+    cursor: pointer;
+}
+.contant-contact .blue-box .icons-box .circle{
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 60px;
+    transition:  0.1s;
+    margin-bottom: 30px;
+}
+.contant-contact .blue-box .icons-box .title{
+    font-family: Poppins;
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 600;
+    width: 250px;
+    text-align: center;
+}
+.contant-contact .blue-box .icons-box .description{
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--main-color);
+    text-align: center;
+    line-height: 26px;
+    overflow-wrap: break-word;
+    margin: 20px 0 0;
+    width: 250px;
+    text-align: center;
+}
+.contant-contact .blue-box .icons-box div:hover .circle{
+    border-width: 5px;
+}
+.contant-contact .swiper-parent{
+    display: flex;
+    width: min(90%,1140px);
+    margin: auto;
+    align-items: center;
+    gap: 0 50px;
+    margin-top: 100px;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6
+}
+.contant-contact .swiper-parent .img-box{
+    display: flex;
+}
+.contant-contact .swiper-parent .swiper-slide{
+    font-family: times new roman;
+    font-size: 26px;
+    font-style: italic;
+    line-height: 1.46;
+    letter-spacing: .5px;
+    text-align: left;
+    margin-bottom: 24px;
+    padding-bottom: 40px;
+}
+.contant-contact .swiper-parent .back-swiper-contact{
+    width: 40%;
+    position: relative;
+}
+.contant-contact .swiper-parent .back-swiper-contact:before{
+    content: "‘‘";
+    font-family: Arial;
+    font-size: 160px;
+    text-align: left;
+    position: absolute;
+    top: 58px;
+    left: -80px;
+    letter-spacing: -13px;
+    color: var(--color-item-third);
+    z-index: 100;
+}
+.contant-contact .swiper-pagination {
+    text-align: left;
+}
+.contant-contact .swiper-pagination span{
+    background-color: var(--color-item-third);
+}
+.contant-contact .message-box{
+    padding: 80px 0;
+    width: min(90%,1140px);
+    margin: auto;
+}
+.contant-contact .message-box .title{
+    font-size: 44px;
+    font-family: Poppins;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    color: var(--main-title-color);
+}
+.contant-contact .message-box .description{
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--main-des-color);
+    padding: 10px 0;
+    letter-spacing: normal;
+    line-height: 25px;
+    position: relative;
+}
+.contant-contact .message-box .description:after{
+    content: "";
+
+    width: 80px;
+    border-top: 1px solid var(--main-p-color);
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0px);
+    bottom: -10px;
+}
+.contant-contact .inpus-box{
+    display: flex;
+    gap: 0 40px;
+    margin-top: 50px;
+}
+.contant-contact .inpus-box input{
+    height: 45px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding:  0 10px;
+    flex: 1;
+    cursor: auto;
+}
+.contant-contact .inpus-box input:hover{
+    border-color: var(--color-item-third);
+}
+.contant-contact .inpus-box input:focus-visible{
+    border-color: var(--color-item-third);
+    outline: none;
+}
+.contant-contact .message-box textarea{
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    resize: vertical;
+}
+.contant-contact .message-box textarea:hover,.contant-contact .message-box textarea:focus-visible{
+    border-color: var(--color-item-third);
+    outline: none;
+}
 @media screen and (min-width:2200px){
     .categoriespart{
         background-position-y: unset;
@@ -3885,10 +4068,10 @@ span {
     }
 
 
-/*    swiper*/
-     .categoriespart .swiper-button-next,.categoriespart .swiper-button-prev{
-         display: none !important;
-     }
+    /*    swiper*/
+    .categoriespart .swiper-button-next,.categoriespart .swiper-button-prev{
+        display: none !important;
+    }
     .skill-plan .skillpoint{
         margin: 70px 20px 0;
     }
@@ -3896,7 +4079,7 @@ span {
         background-size: 100vw;
     }
 
-/*  all  courses page*/
+    /*  all  courses page*/
     .back-image {
         background-size: cover;
         background-repeat: no-repeat;
@@ -3941,7 +4124,7 @@ span {
     .related-courses{
         width: 100%;
     }
-/*    about page*/
+    /*    about page*/
     .main-wrapper-boxes .main-title-boxes #tittle-box{
         font-size: 35px;
     }
@@ -3999,7 +4182,7 @@ span {
     .categoriespart .cd{
         padding: 30px 15px;
     }
-/*    all courses page*/
+    /*    all courses page*/
     .box2{
         flex-direction: column;
     }
@@ -4018,13 +4201,13 @@ span {
     .data-page .title-box .title{
         font-size: 60px;
     }
-    .blue-box .title{
+    .popular-box .blue-box .title{
         font-size: 30px;
     }
-    .blue-box{
+    .popular-box .blue-box{
         padding: 90px 20px 0;
     }
-/*    cours box*/
+    /*    cours box*/
     .all-texts-box {
         margin: 30px auto auto;
     }
@@ -4041,7 +4224,7 @@ span {
     .info-video{
         width: 100%;
     }
-/*    about*/
+    /*    about*/
     .wrapper-boxes .box{
         flex-direction: column;
     }
@@ -4084,7 +4267,15 @@ span {
     }
 
 }
-@media screen and (max-width:425px){
+/*@media screen and (max-width:650px){*/
+/*    .all-courses .courses .card-cours{*/
+/*        width: 100%;*/
+/*    }*/
+/*    .all-courses .header-box {*/
+/*        flex-direction: column;*/
+/*    }*/
+/*}*/
+@media screen and (max-width:650px){
     .buy-button{
         display: none;
     }
@@ -4231,7 +4422,7 @@ span {
     .cardboxlist{
         margin-bottom: 50px;
     }
-/*    courses box*/
+    /*    courses box*/
     .data-page .title-box{
         flex-direction: column;
     }
@@ -4247,10 +4438,10 @@ span {
         text-align: center;
         padding-left: 0;
     }
-    .blue-box .title{
+    .popular-box .blue-box .title{
         font-size: 26px;
     }
-    .blue-box{
+    .popular-box .blue-box{
         padding: 65px 20px 0
     }
     .gray-box{
@@ -4270,19 +4461,17 @@ span {
     .all-courses .header-box .right-box .search-box{
         width: 100%;
     }
-    .all-courses .courses .card-cours{
-        width: 100%;
-    }
+
     .wordpres-box{
         width: 80% !important;
     }
     .box3 .contant .text-box{
         margin-left: 0;
     }
-    .blue-box .swiper{
+    .popular-box .blue-box .swiper{
         width: 100%;
     }
-/*    cours page*/
+    /*    cours page*/
     .info-video{
         flex-wrap: wrap;
     }
@@ -4383,7 +4572,7 @@ span {
     .rating-box .right-box .statistics{
         margin-top: 10px;
     }
-/*    about*/
+    /*    about*/
     .main-wrapper-boxes .main-title-boxes #tittle-box{
         font-size: 25px;
     }
@@ -4426,6 +4615,9 @@ span {
     .about-contant .call-box div{
         margin-bottom: 20px;
     }
+    .all-courses .courses .card-cours{
+        width: 100%;
+    }
 }
 @media screen and (max-width:375px){
     .feedbackslider .swiper-pagination-bullet{
@@ -4438,7 +4630,7 @@ span {
     .searchpart .searachbox{
         padding: 0 20px;
     }
-/*    all courses page*/
+    /*    all courses page*/
     .wordpres-box{
         width: 100% !important;
     }
