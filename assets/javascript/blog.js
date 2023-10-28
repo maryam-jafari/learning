@@ -3,7 +3,6 @@ var swiper = new Swiper(".blog", {
     spaceBetween: 30,
 
 
-
     // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
@@ -13,21 +12,17 @@ var swiper = new Swiper(".blog", {
         325:{
             slidesPerView:2,
             spaceBetween: 30,
-            freeMode: true,
+
         },
         768:{
             slidesPerView: 3,
             spaceBetween: 30,
-            freeMode: true
-        },
-        769:{
-            slidesPerView: 3,
-            spaceBetween: 30,
-            freeMode: true
+
         }
 
     },
 });
+swiper.slideTo(0, false,false);
 let lastScrollTop =
     window.pageYOffset || document.documentElement.scrollTop;
 window.addEventListener(

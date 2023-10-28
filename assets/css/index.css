@@ -4553,6 +4553,311 @@ span {
     font-family: "Open Sans";
     font-size: 14px;
 }
+/*login*/
+.login-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    background: var(--main-color);
+    border-radius: 15px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.03);
+    position: relative;
+    width: min(620px,90%);
+    display: flex;
+    direction: ltr;
+}
+.login-info{
+    padding: 30px;
+    width: 70%;
+}
+.login-logo {
+    background: var(--color-item-third);
+    width: 30%;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: var(--main-color);
+}
+.login-container .input_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--input-color);
+    padding: 10px 15px;
+    width: auto;
+    border-radius: 5px;
+    margin: 10px 0 20px;
+}
+.login-form h1 {
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--color1);
+    margin-bottom: 30px;
+    font-family: Poppins;
+}
+
+.login-logo img {
+    max-width: 100px;
+}
+
+.login-form input {
+    background: transparent;
+    display: block;
+    width: 80%;
+    max-width: 100%;
+    border-radius: 5px;
+
+    border: none;
+}
+.login-form input:focus-visible{
+    outline: none;
+}
+.login-form input[type=number],
+.login-form input[type=password] {
+    direction: ltr;
+}
+.login-form .header-login{
+    display: flex;
+    justify-content: space-between;
+}
+a.back-btn {
+    background: #4053ba21;
+    color:var(--main-paragragh-color-text);
+    display: block;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: 0.3s all;
+    font-size: 14px;
+    font-family: "Open Sans";
+    height: fit-content;
+}
+.forget-password{
+    font-family: "Open Sans";
+    color: var(--main-paragragh-color-text);
+    font-size: 13px;
+}
+a.back-btn:hover {
+    background:var(--color-item-third);
+    color:  var(--main-color);
+}
+
+.login-form button {
+    background: var(--color-item-fourth);
+    color: var(--main-color);
+    display: block;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-size: 14px;
+    margin-top: 50px;
+    transition: 0.3s all;
+    border: none;
+}
+
+.login-form button:hover {
+    background: var(--color-item-third);
+
+}
+
+.icon-input {
+    position: relative;
+    font-family: "Open Sans";
+}
+.icon-input label{
+    font-size: 14px;
+}
+.icon-input i {
+    font-size: 18px;
+    color: var(--main-paragragh-color-text);
+}
+
+.icon-input input {
+    padding-left: 30px !important;
+}
+
+.login-form:before {
+    content: " ";
+    background: var(--main-paragragh-color-text);
+    width: calc(50% - 124px);
+    height: 100vh;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+/* IconPicker */
+.icp-header {
+    position: relative;
+    padding: 30px;
+}
+
+.icp-header strong {
+    display: inline-block;
+    position: inherit;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color3);
+}
+
+button.icp-close {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font-size: 18px;
+    color: var(--color3);
+}
+
+button.icp-close:focus {
+    box-shadow: none;
+}
+
+form.icp-search {
+    position: absolute;
+    max-width: 100%;
+    left: 80px;
+    top: 22px;
+    width: calc(100% - 355px);
+}
+
+form.icp-search input {
+    background: var(--background1);
+    display: block;
+    width: 100%;
+    padding: 14px 50px 14px 15px;
+    border-radius: 5px;
+    color: var(--color1);
+}
+
+form.icp-search input::placeholder {
+    color: var(--color4);
+}
+
+form.icp-search:before {
+    content: "\e90a";
+    position: absolute;
+    font-family: 'PanelIcons';
+    color: var(--color4);
+    font-size: 22px;
+    right: 18px;
+    top: 10px;
+}
+
+.icons-categories {
+    display: block;
+    background: var(--background1);
+    width: 250px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-height: 500px;
+    max-height: 100%;
+    overflow-y: auto;
+    border-radius: 0 0 8px 0;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.icons-categories button {
+    display: block;
+    width: 100%;
+    text-align: right;
+    position: relative;
+    border-radius: 0 !important;
+    padding: 14px 60px 14px 15px;
+    color: var(--color1);
+    font-size: 16px;
+}
+
+.icons-categories button i {
+    position: absolute;
+    font-size: 20px;
+    color: var(--color3);
+    right: 24px;
+}
+
+.icons-categories button.active {
+    background: var(--background2) !important;
+    color: var(--color1) !important;
+}
+
+.icons-categories button:hover {
+    background: #ffffff5c;
+    color: inherit !important;
+}
+
+.iconpicker .modal-body {
+    height: 500px;
+    max-height: 100%;
+    padding-right: 275px;
+}
+
+.icp-header:before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: var(--background1);
+    border-radius: 0 8px 0 0;
+    z-index: 1;
+}
+
+.icons-categories button span {
+    position: absolute;
+    left: 35px;
+    background: var(--primary-op);
+    color: var(--primary);
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 5px;
+    transition: 0.3s all;
+    opacity: 0;
+}
+
+.icons-categories button.active span {
+    left: 15px;
+    opacity: 1;
+}
+
+.icons-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 15px;
+    padding-left: 30px;
+    margin-top: 10px;
+    overflow-y: auto;
+    height: 490px;
+}
+
+i.icp-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    border: 3px solid var(--hover2);
+    border-radius: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+i.icp-item:hover {
+    border-color: var(--color4);
+}
 @media screen and (min-width:2200px){
     .categoriespart{
         background-position-y: unset;
@@ -5329,6 +5634,27 @@ span {
     .card-cours .text p{
         font-size: 14px;
     }
+/*    login*/
+    .login-form{
+        flex-direction: column;
+        margin: 50px 0;
+        border-radius: 22px;
+    }
+    .login-logo{
+        width: 100%;
+        height: 170px;
+        border-top-left-radius: 22px;
+        border-top-right-radius: 22px;
+        border-bottom-right-radius:0;
+        border-bottom-left-radius:0;
+    }
+
+    .login-info{
+        width: auto;
+    }
+    .login-form button{
+        font-size: 14px;
+    }
 }
 @media screen and (max-width:375px){
     .feedbackslider .swiper-pagination-bullet{
@@ -5344,6 +5670,14 @@ span {
     /*    all courses page*/
     .wordpres-box{
         width: 100% !important;
+    }
+/*    login*/
+    .login-form .header-login{
+        flex-direction: column-reverse;
+    }
+    a.back-btn{
+        width: fit-content;
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width:320px){
