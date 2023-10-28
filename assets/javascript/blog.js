@@ -11,7 +11,7 @@ var swiper = new Swiper(".blog", {
     },
     breakpoints:{
         325:{
-            slidesPerView:1,
+            slidesPerView:2,
             spaceBetween: 30,
             freeMode: true,
         },
